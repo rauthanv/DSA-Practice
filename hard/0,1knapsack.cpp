@@ -31,16 +31,13 @@ public:
 
     int knapsackt(int W, vector<int>& val, vector<int>& wt, int n) {
         if (n == 0 || W == 0) return 0;
-
         if (t[n][W] != -1) return t[n][W];
-
         if (wt[n-1] <= W) {
             return t[n][W] = max(
                 val[n-1] + knapsackt(W - wt[n-1], val, wt, n-1),
                 knapsackt(W, val, wt, n-1)
             );
         }
-
         return t[n][W] = knapsackt(W, val, wt, n-1);
     }
 
@@ -68,7 +65,6 @@ public:
                 }
             }
         }
-
         return dp[n][W];
     }
 };
