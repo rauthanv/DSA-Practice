@@ -21,10 +21,8 @@ public:
 
         int notTake = lisRec(nums, n - 1, prev);
         int take = 0;
-
         if (prev == -1 || nums[n - 1] < nums[prev])
             take = 1 + lisRec(nums, n - 1, n - 1);
-
         return max(take, notTake);
     }
 
@@ -42,7 +40,6 @@ public:
 
         int notTake = lisMemo(nums, n - 1, prev);
         int take = 0;
-
         if (prev == -1 || nums[n - 1] < nums[prev])
             take = 1 + lisMemo(nums, n - 1, n - 1);
 
@@ -67,7 +64,6 @@ public:
             }
             ans = max(ans, t[i]);
         }
-
         return ans;
     }
 
@@ -89,7 +85,6 @@ public:
                 temp[idx] = nums[i];             
             }
         }
-
         return temp.size();
     }
 
