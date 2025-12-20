@@ -1,8 +1,8 @@
 // Problem: Jump Game
 
 // Approaches:
-// 1. Recursion + Memoization   [Commented]
-// 2. Greedy (Optimal)          [Implemented]
+// 1. Recursion + Memoization   
+// 2. Greedy (Optimal)          
 //
 // Goal:
 // Determine if we can reach the last index
