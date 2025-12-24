@@ -6,9 +6,6 @@
 // 3. Tabulation DP   — O(n²)
 // 4. Optimized O(n log n) using Binary Search
 
-#include <bits/stdc++.h>
-using namespace std;
-
 class Solution {
 public:
 
