@@ -3,7 +3,7 @@
 class Solution {
 public:
 
-    // ------------------ TABULATION FUNCTION ------------------ //
+    // ------------------ TABULATION ------------------ //
     bool subsetSum(vector<int>& nums, int sum) {
         int n = nums.size();
         bool t[n + 1][sum + 1];
